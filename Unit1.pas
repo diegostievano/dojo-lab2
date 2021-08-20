@@ -68,15 +68,12 @@ begin
        if vProduct = 0 then
          vProduct := pArray[vIndex2]
        else
-       if vIndex2 = length(pArray) then
-        continue
-       else
          vProduct := vProduct * pArray[vIndex2];
 
        Result[vIndex] := vProduct;
     end;
 
-    //Só pra exibir o resultado em tela.
+    //SÃ³ pra exibir o resultado em tela.
     if Label2.Caption = '' then
       Label2.Caption := IntToStr(Result[vIndex])
     else
